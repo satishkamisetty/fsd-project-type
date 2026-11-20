@@ -270,3 +270,4 @@ ZenZone employs a tranquil pastel palette:
 - **Warm Cream (`#F5EBDD`):** Card highlights and warm secondary actions
 - **Charcoal (`#343D35`):** High-contrast readable typography
 - **Coral (`#D96E56`):** Emergency SOS highlights and stress alerts
+# fsd-project-type
