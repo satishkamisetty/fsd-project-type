@@ -1,0 +1,22 @@
+{
+  "name": "zenzone",
+  "version": "2.0.0",
+  "description": "ZenZone: CalmCode Retreat - Full-Stack Mindful Stress Relief Companion for Students",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "node tests/test-runner.js"
+  },
+  "keywords": [
+    "mindfulness",
+    "box-breathing",
+    "stress-relief",
+    "exam-sos",
+    "chartjs",
+    "web-audio-api",
+    "desk-yoga"
+  ],
+  "author": "Human Developer",
+  "license": "MIT"
+}

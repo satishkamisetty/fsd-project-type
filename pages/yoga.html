@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Pose Gallery – ZenZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6a6 6 0 0 0-6 6c0 3.3 2.7 6 6 6s6-2.7 6-6"/>
+        </svg>
+        <span>ZenZone</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="yoga.html" class="active">Yoga Poses</a></li>
+          <li><a href="meditation.html">Meditation</a></li>
+          <li><a href="breathing.html">Breathing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="meditation.html" class="btn btn-primary">Start Practicing</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="section bg-light" style="padding: 4rem 0 3rem;">
+    <div class="container text-center">
+      <span class="section-tag">Asana Sanctuary</span>
+      <h1 class="section-title">Yoga Pose Gallery</h1>
+      <p class="section-subtitle">
+        Explore classical postures with step-by-step alignment guidance, anatomical benefits, and recommended durations for your daily practice.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Controls & Pose Cards -->
+  <section class="section">
+    <div class="container">
+      <!-- Search & Filters -->
+      <div class="flex-between" style="margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div class="filter-bar" id="categoryFilters" style="margin-bottom: 0;">
+          <button class="filter-btn active" data-filter="all">All Poses</button>
+          <button class="filter-btn" data-filter="beginner">Beginner</button>
+          <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+        </div>
+        <div style="min-width: 260px;">
+          <input type="text" id="poseSearchInput" class="form-control" placeholder="Search poses (e.g. Tree, Cobra)..." style="padding: 0.55rem 1rem;">
+        </div>
+      </div>
+
+      <!-- Poses Grid -->
+      <div class="grid grid-3" id="posesGrid">
+        <!-- Pose 1: Tadasana -->
+        <article class="pose-card" data-category="beginner" id="tadasana">
+          <div class="pose-image-box">
+            <svg viewBox="0 0 300 200" class="pose-svg">
+              <rect width="300" height="200" fill="#E8EFE5"/>
+              <circle cx="150" cy="45" r="15" fill="#526B58"/>
+              <line x1="150" y1="60" x2="150" y2="145" stroke="#526B58" stroke-width="7" stroke-linecap="round"/>
+              <line x1="150" y1="80" x2="120" y2="125" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+              <line x1="150" y1="80" x2="180" y2="125" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+              <line x1="150" y1="145" x2="140" y2="190" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+              <line x1="150" y1="145" x2="160" y2="190" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="card-badge beginner">Beginner</span>
+          </div>
+          <div class="pose-content">
+            <div class="pose-meta">
+              <span class="pose-sanskrit">Tadasana</span>
+              <span class="pose-duration">⏱ 1 - 3 min</span>
+            </div>
+            <h3 class="pose-name">Mountain Pose</h3>
+            <p class="pose-desc">The mother of all standing postures. Teaches grounded stability, opens the chest, and aligns skeletal posture.</p>
+            <div class="pose-benefits-tags">
+              <span>Postural Alignment</span>
+              <span>Grounding</span>
+            </div>
+            <button class="btn-card-link open-modal-btn" data-pose="tadasana">View Details & Steps →</button>
+          </div>
+        </article>
+
+        <!-- Pose 2: Vrikshasana -->
+        <article class="pose-card" data-category="beginner" id="vrikshasana">
+          <div class="pose-image-box">
+            <svg viewBox="0 0 300 200" class="pose-svg">
+              <rect width="300" height="200" fill="#E8EFE5"/>
+              <circle cx="150" cy="45" r="14" fill="#526B58"/>
+              <line x1="150" y1="59" x2="150" y2="145" stroke="#526B58" stroke-width="7" stroke-linecap="round"/>
+              <path d="M150 70 Q130 40 150 20 Q170 40 150 70" fill="none" stroke="#526B58" stroke-width="5"/>
+              <line x1="150" y1="145" x2="150" y2="190" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+              <polyline points="150,140 120,115 145,115" fill="none" stroke="#526B58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="card-badge beginner">Beginner</span>
+          </div>
+          <div class="pose-content">
+            <div class="pose-meta">
+              <span class="pose-sanskrit">Vrikshasana</span>
+              <span class="pose-duration">⏱ 1 - 2 min/side</span>
+            </div>
+            <h3 class="pose-name">Tree Pose</h3>
+            <p class="pose-desc">Cultivates deep concentration, ankle stability, and hip opening while calming neurological hyperactivity.</p>
+            <div class="pose-benefits-tags">
+              <span>Balance</span>
+              <span>Ankle Strength</span>
+            </div>
+            <button class="btn-card-link open-modal-btn" data-pose="vrikshasana">View Details & Steps →</button>
+          </div>
+        </article>
+
+        <!-- Pose 3: Bhujangasana -->
+        <article class="pose-card" data-category="intermediate" id="bhujangasana">
+          <div class="pose-image-box">
+            <svg viewBox="0 0 300 200" class="pose-svg">
+              <rect width="300" height="200" fill="#E8EFE5"/>
+              <circle cx="70" cy="80" r="13" fill="#526B58"/>
+              <path d="M70 93 C95 110 130 145 170 160 C210 165 240 165 260 165" fill="none" stroke="#526B58" stroke-width="7" stroke-linecap="round"/>
+              <line x1="90" y1="110" x2="105" y2="165" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="card-badge intermediate">Intermediate</span>
+          </div>
+          <div class="pose-content">
+            <div class="pose-meta">
+              <span class="pose-sanskrit">Bhujangasana</span>
+              <span class="pose-duration">⏱ 30 - 60 sec</span>
+            </div>
+            <h3 class="pose-name">Cobra Pose</h3>
+            <p class="pose-desc">Gentle prone backbend that strengthens the spine, stimulates abdominal kidneys, and relieves mild fatigue.</p>
+            <div class="pose-benefits-tags">
+              <span>Spinal Flexibility</span>
+              <span>Chest Expansion</span>
+            </div>
+            <button class="btn-card-link open-modal-btn" data-pose="bhujangasana">View Details & Steps →</button>
+          </div>
+        </article>
+
+        <!-- Pose 4: Balasana -->
+        <article class="pose-card" data-category="beginner" id="balasana">
+          <div class="pose-image-box">
+            <svg viewBox="0 0 300 200" class="pose-svg">
+              <rect width="300" height="200" fill="#E8EFE5"/>
+              <circle cx="210" cy="135" r="13" fill="#526B58"/>
+              <path d="M210 148 C180 140 150 140 120 165" fill="none" stroke="#526B58" stroke-width="7" stroke-linecap="round"/>
+              <line x1="210" y1="150" x2="260" y2="165" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+              <path d="M120 165 C100 165 80 170 60 175" fill="none" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="card-badge beginner">Beginner</span>
+          </div>
+          <div class="pose-content">
+            <div class="pose-meta">
+              <span class="pose-sanskrit">Balasana</span>
+              <span class="pose-duration">⏱ 2 - 5 min</span>
+            </div>
+            <h3 class="pose-name">Child's Pose</h3>
+            <p class="pose-desc">A deeply restorative sanctuary posture that gently releases back tension and soothes stress and anxiety.</p>
+            <div class="pose-benefits-tags">
+              <span>Stress Relief</span>
+              <span>Hip Release</span>
+            </div>
+            <button class="btn-card-link open-modal-btn" data-pose="balasana">View Details & Steps →</button>
+          </div>
+        </article>
+
+        <!-- Pose 5: Adho Mukha Svanasana -->
+        <article class="pose-card" data-category="beginner" id="downward-dog">
+          <div class="pose-image-box">
+            <svg viewBox="0 0 300 200" class="pose-svg">
+              <rect width="300" height="200" fill="#E8EFE5"/>
+              <!-- Inverted V Shape -->
+              <circle cx="95" cy="140" r="12" fill="#526B58"/>
+              <line x1="95" y1="150" x2="160" y2="80" stroke="#526B58" stroke-width="7" stroke-linecap="round"/>
+              <line x1="160" y1="80" x2="225" y2="175" stroke="#526B58" stroke-width="7" stroke-linecap="round"/>
+              <line x1="125" y1="115" x2="80" y2="175" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="card-badge beginner">Beginner</span>
+          </div>
+          <div class="pose-content">
+            <div class="pose-meta">
+              <span class="pose-sanskrit">Adho Mukha Svanasana</span>
+              <span class="pose-duration">⏱ 1 - 3 min</span>
+            </div>
+            <h3 class="pose-name">Downward-Facing Dog</h3>
+            <p class="pose-desc">Rejuvenating full-body stretch that energizes the nervous system while strengthening hamstrings, shoulders, and wrists.</p>
+            <div class="pose-benefits-tags">
+              <span>Hamstring Stretch</span>
+              <span>Full-Body Tone</span>
+            </div>
+            <button class="btn-card-link open-modal-btn" data-pose="downward-dog">View Details & Steps →</button>
+          </div>
+        </article>
+
+        <!-- Pose 6: Sukhasana -->
+        <article class="pose-card" data-category="beginner" id="sukhasana">
+          <div class="pose-image-box">
+            <svg viewBox="0 0 300 200" class="pose-svg">
+              <rect width="300" height="200" fill="#E8EFE5"/>
+              <circle cx="150" cy="55" r="14" fill="#526B58"/>
+              <line x1="150" y1="70" x2="150" y2="145" stroke="#526B58" stroke-width="7" stroke-linecap="round"/>
+              <path d="M120 160 Q150 145 180 160" fill="none" stroke="#526B58" stroke-width="6" stroke-linecap="round"/>
+              <path d="M100 170 Q150 175 200 170" fill="none" stroke="#526B58" stroke-width="8" stroke-linecap="round"/>
+              <polyline points="150,90 125,120 120,150" fill="none" stroke="#526B58" stroke-width="5" stroke-linecap="round"/>
+              <polyline points="150,90 175,120 180,150" fill="none" stroke="#526B58" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="card-badge beginner">Beginner</span>
+          </div>
+          <div class="pose-content">
+            <div class="pose-meta">
+              <span class="pose-sanskrit">Sukhasana</span>
+              <span class="pose-duration">⏱ 5 - 20 min</span>
+            </div>
+            <h3 class="pose-name">Easy Pose</h3>
+            <p class="pose-desc">A peaceful seated meditation posture that promotes an erect spine, relaxed hips, and calm rhythmic breath.</p>
+            <div class="pose-benefits-tags">
+              <span>Meditation Base</span>
+              <span>Hip Flexibility</span>
+            </div>
+            <button class="btn-card-link open-modal-btn" data-pose="sukhasana">View Details & Steps →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="poseModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      <div id="modalContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6a6 6 0 0 0-6 6c0 3.3 2.7 6 6 6s6-2.7 6-6"/>
+          </svg>
+          <span>ZenZone</span>
+        </div>
+        <p>Your sanctuary for mindful living, authentic yoga asana guidance, and soothing breath exercises.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="yoga.html">Yoga Poses</a></li>
+          <li><a href="meditation.html">Meditation</a></li>
+          <li><a href="breathing.html">Breathing</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="about.html">About Developer</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container flex-between">
+        <p>&copy; 2026 ZenZone. Module 1 & 2 Static Pose Showcase.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mainNav = document.getElementById('mainNav');
+    if (mobileBtn && mainNav) {
+      mobileBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-open');
+        mobileBtn.classList.toggle('active');
+      });
+    }
+
+    // Filter Poses
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const poseCards = document.querySelectorAll('.pose-card');
+    const searchInput = document.getElementById('poseSearchInput');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        filterPoseCards(filter, searchInput.value.toLowerCase());
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+        filterPoseCards(activeFilter, e.target.value.toLowerCase());
+      });
+    }
+
+    function filterPoseCards(filter, query) {
+      poseCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const title = card.querySelector('.pose-name').textContent.toLowerCase();
+        const sanskrit = card.querySelector('.pose-sanskrit').textContent.toLowerCase();
+
+        const matchesFilter = (filter === 'all' || category === filter);
+        const matchesQuery = (!query || title.includes(query) || sanskrit.includes(query));
+
+        if (matchesFilter && matchesQuery) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Modal Details Logic
+    const poseDetails = {
+      tadasana: {
+        title: "Mountain Pose (Tadasana)",
+        difficulty: "Beginner",
+        duration: "1 to 3 minutes",
+        benefits: ["Improves posture and body awareness", "Strengthens thighs, knees, and ankles", "Firms abdomen and buttocks", "Reduces flat feet"],
+        steps: [
+          "Stand with bases of big toes touching, heels slightly apart.",
+          "Lift and fan out your toes, then lay them softly on the mat.",
+          "Firm your thigh muscles and lift the knee caps without locking joints.",
+          "Elongate your spine, roll shoulders back and down, letting arms rest gently beside torso with palms facing forward.",
+          "Breathe deeply and smoothly, feeling grounded like a mountain."
+        ]
+      },
+      vrikshasana: {
+        title: "Tree Pose (Vrikshasana)",
+        difficulty: "Beginner",
+        duration: "1 to 2 minutes per side",
+        benefits: ["Enhances equilibrium and nervous system balance", "Strengthens calves, ankles, and thighs", "Opens the groin and chest", "Improves mental focus"],
+        steps: [
+          "Begin in Mountain Pose (Tadasana), shifting weight onto the left foot.",
+          "Bend your right knee and place the sole of the right foot on the inner left thigh or calf (avoid the knee joint).",
+          "Find an unmoving focal point (drishti) at eye level.",
+          "Bring hands together in Anjali Mudra (prayer pose) at heart center or extend them overhead.",
+          "Hold for 5-10 deep breaths, then switch to the other side."
+        ]
+      },
+      bhujangasana: {
+        title: "Cobra Pose (Bhujangasana)",
+        difficulty: "Intermediate",
+        duration: "30 to 60 seconds",
+        benefits: ["Strengthens the entire spinal column", "Expands lung capacity and relieves asthma", "Stimulates digestive organs", "Elevates mood and combats lethargy"],
+        steps: [
+          "Lie prone on your belly with legs extended and tops of feet flat on the floor.",
+          "Place palms on the mat under your shoulders, hugging elbows close to your torso.",
+          "Inhale and slowly lift the chest off the floor, engaging your back muscles.",
+          "Keep your shoulders dropped away from ears and gaze softly forward or slightly upward.",
+          "Exhale and slowly lower your chest back down to the floor."
+        ]
+      },
+      balasana: {
+        title: "Child's Pose (Balasana)",
+        difficulty: "Beginner",
+        duration: "2 to 5 minutes",
+        benefits: ["Soothes the sympathetic nervous system", "Gently stretches hips, thighs, and ankles", "Relieves back and neck strain", "Calms brain activity"],
+        steps: [
+          "Kneel on the floor, bring big toes together, and separate knees hip-width apart.",
+          "Exhale and fold your torso down between your thighs.",
+          "Rest your forehead gently onto the mat or a yoga block.",
+          "Extend arms forward along the floor or rest them alongside your thighs with palms facing up.",
+          "Breathe deeply into your lower back and ribs."
+        ]
+      },
+      'downward-dog': {
+        title: "Downward-Facing Dog (Adho Mukha Svanasana)",
+        difficulty: "Beginner",
+        duration: "1 to 3 minutes",
+        benefits: ["Calms the brain and relieves mild fatigue", "Energizes the whole body", "Stretches shoulders, hamstrings, and calves", "Strengthens arms and legs"],
+        steps: [
+          "Come onto your hands and knees in a tabletop position.",
+          "Tuck your toes, press firmly through your palms, and lift your knees away from the floor.",
+          "Lift your sitting bones high toward the ceiling and lengthen your spine.",
+          "Keep knees slightly bent if hamstrings feel tight, pressing heels toward the floor.",
+          "Relax your head between your upper arms and take 5 deep cycles of breath."
+        ]
+      },
+      sukhasana: {
+        title: "Easy Pose (Sukhasana)",
+        difficulty: "Beginner",
+        duration: "5 to 20 minutes",
+        benefits: ["Promotes serenity and tranquil mind", "Lengthens spinal vertebrae", "Opens hips and relaxes groin", "Optimal posture for pranayama and meditation"],
+        steps: [
+          "Sit comfortably cross-legged on the floor or on a folded blanket.",
+          "Align head, neck, and spine directly over the pelvis.",
+          "Rest hands on your knees with palms facing down (for grounding) or up (for receptive energy).",
+          "Close your eyes softly and relax facial and jaw muscles.",
+          "Focus gently on the steady natural flow of your breathing."
+        ]
+      }
+    };
+
+    const modal = document.getElementById('poseModal');
+    const modalContent = document.getElementById('modalContent');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+    document.querySelectorAll('.open-modal-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.getAttribute('data-pose');
+        const data = poseDetails[key];
+        if (data) {
+          modalContent.innerHTML = `
+            <span class="badge badge-sage" style="margin-bottom:0.75rem;">${data.difficulty} • ${data.duration}</span>
+            <h2 style="margin-bottom: 1rem;">${data.title}</h2>
+            <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--color-forest);">Key Benefits:</h4>
+            <ul style="list-style: disc; margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--color-charcoal-light);">
+              ${data.benefits.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+            <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--color-forest);">Step-by-Step Instructions:</h4>
+            <ol style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--color-charcoal-light); line-height: 1.7;">
+              ${data.steps.map(s => `<li>${s}</li>`).join('')}
+            </ol>
+            <div style="background: var(--color-sage-soft); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.9rem;">
+              <strong>💡 Mindfulness Cue:</strong> Never force any pose. Breathe smoothly and exit if you experience sharp pain.
+            </div>
+          `;
+          modal.classList.add('active');
+        }
+      });
+    });
+
+    modalCloseBtn.addEventListener('click', () => modal.classList.remove('active'));
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.classList.remove('active');
+    });
+  </script>
+</body>
+</html>

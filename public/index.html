@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenZone – CalmCode Retreat | Student Stress Relief Companion</title>
+  <meta name="description" content="ZenZone is a calm, accessible digital sanctuary providing 4-4-4-4 Box Breathing, Exam Panic SOS relief, 10 Desk-Friendly Yoga poses, Ambient Soundscapes, and Daily Mood Journaling for university students.">
+
+  <!-- Google Fonts: Playfair Display (Serenity) & Outfit (Geometric Clarity) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Chart.js for Mood & Stress Trends -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="brand-logo quick-tab-link" data-tab="overviewTab">
+        <div class="brand-icon">🌿</div>
+        <span>ZenZone</span>
+      </div>
+
+      <button class="nav-mobile-toggle" id="navMobileToggle" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><button class="nav-tab-btn active" data-tab="overviewTab">Overview</button></li>
+        <li><button class="nav-tab-btn" data-tab="breathingTab">Box Breathing</button></li>
+        <li><button class="nav-tab-btn" data-tab="meditationTab">Meditation</button></li>
+        <li><button class="nav-tab-btn" data-tab="yogaTab">Desk Yoga</button></li>
+        <li><button class="nav-tab-btn" data-tab="journalTab">Mood Journal</button></li>
+        <li><button class="nav-tab-btn" data-tab="soundscapeTab">Soundscapes</button></li>
+        <li><button class="nav-tab-btn" data-tab="calmWallTab">Campus Wall</button></li>
+        <li><button class="nav-tab-btn" data-tab="affirmationsTab">Affirmations</button></li>
+        <li><button class="nav-tab-btn" data-tab="aboutTab">About</button></li>
+        <li>
+          <button class="sos-nav-btn open-sos-btn" title="Instant 2-Minute Pre-Exam Crisis Relief">
+            <span>🚨</span> Exam Panic SOS
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Application Body -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- ==============================================
+           PANEL 1: OVERVIEW / DASHBOARD
+           ============================================== -->
+      <section class="tab-panel active" id="overviewTab">
+        <div class="hero-banner">
+          <div class="hero-content">
+            <span class="badge badge-sage" style="margin-bottom: 0.8rem;">CalmCode Retreat Sanctuary</span>
+            <h1 class="hero-title">Reset Your Mind Between Study Sprints</h1>
+            <p class="hero-subtitle">
+              Built specifically for university students enduring semester examinations. Fast, accessible 2–5 minute mindful pauses with zero subscription paywalls or spiritual fluff.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-coral open-sos-btn">
+                <span>🚨</span> Launch Exam Panic SOS
+              </button>
+              <button class="btn btn-primary quick-tab-link" data-tab="breathingTab">
+                <span>🫁</span> Box Breathing (4-4-4-4)
+              </button>
+              <button class="btn btn-secondary quick-tab-link" data-tab="yogaTab">
+                <span>🧘</span> 10 Desk Yoga Poses
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Launch Feature Cards -->
+        <div class="features-grid">
+          <div class="feature-card quick-tab-link" data-tab="breathingTab">
+            <div>
+              <div class="feature-icon-wrapper">🫁</div>
+              <h3>Box Breathing</h3>
+              <p>4-4-4-4 nervous system regulator. Lower elevated cortisol and stabilize test anxiety in 60 seconds.</p>
+            </div>
+            <span class="badge badge-sage" style="align-self: flex-start; margin-top: 1rem;">Start Breathing →</span>
+          </div>
+
+          <div class="feature-card quick-tab-link" data-tab="journalTab">
+            <div>
+              <div class="feature-icon-wrapper">📊</div>
+              <h3>Daily Mood & Stress Journal</h3>
+              <p>Track daily stress levels (1–5) and visualize weekly resilience trends with interactive Chart.js analytics.</p>
+            </div>
+            <span class="badge badge-sage" style="align-self: flex-start; margin-top: 1rem;">View Trends →</span>
+          </div>
+
+          <div class="feature-card quick-tab-link" data-tab="yogaTab">
+            <div>
+              <div class="feature-icon-wrapper">🪑</div>
+              <h3>10 Desk Yoga Poses</h3>
+              <p>Relieve cervical spine stiffness, screen-glare headaches, and rounded shoulder student posture.</p>
+            </div>
+            <span class="badge badge-sage" style="align-self: flex-start; margin-top: 1rem;">Explore Poses →</span>
+          </div>
+
+          <div class="feature-card quick-tab-link" data-tab="soundscapeTab">
+            <div>
+              <div class="feature-icon-wrapper">🌧</div>
+              <h3>Soundscapes & Alpha Beats</h3>
+              <p>Synthesized Gentle Rain, Forest Birds, White Noise, and 10Hz Binaural Beats for study concentration.</p>
+            </div>
+            <span class="badge badge-sage" style="align-self: flex-start; margin-top: 1rem;">Open Mixer →</span>
+          </div>
+        </div>
+
+        <!-- Quick Posture & Eye Break Banner -->
+        <div class="card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h3 style="margin-bottom: 0.2rem;">⏱ 45-Minute Posture & Screen Dimmer Guard</h3>
+            <p style="margin: 0;">Periodically dims your display after continuous cramming to prompt physical eye rest.</p>
+          </div>
+          <div style="display: flex; gap: 0.8rem; align-items: center;">
+            <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; cursor: pointer;">
+              <input type="checkbox" id="enableScreenDimmerToggle" checked> Enable Timer
+            </label>
+            <button class="btn btn-outline" id="testScreenDimmerBtn" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+              Preview Break
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 2: 4-4-4-4 BOX BREATHING VISUALIZER
+           ============================================== -->
+      <section class="tab-panel" id="breathingTab">
+        <div class="breathing-container">
+          <span class="badge badge-sage">Autonomic Nervous System Regulation</span>
+          <h2 style="margin: 0.5rem 0 0.3rem;">Box Breathing (Sama Vritti)</h2>
+          <p style="max-width: 520px; margin-bottom: 1.5rem;">
+            Follow the expanding circle: Inhale 4s → Hold 4s → Exhale 4s → Hold 4s. Used by athletes and surgeons to neutralize acute adrenaline.
+          </p>
+
+          <!-- Animated Orb Stage -->
+          <div class="breathing-orb-stage">
+            <div class="breathing-halo"></div>
+            <div class="breathing-circle" id="breathingOrb">
+              <span class="breathing-phase-text" id="breathingPhaseText">Ready</span>
+              <span class="breathing-countdown" id="breathingCountdown">4s</span>
+            </div>
+          </div>
+
+          <div id="breathingCue" style="font-size: 1.05rem; font-weight: 500; color: var(--color-forest-dark); min-height: 28px;">
+            Click "Start Box Breathing" to begin
+          </div>
+
+          <!-- Phase Indicator Pills -->
+          <div class="breathing-timeline">
+            <div class="timeline-step active">1. Inhale (4s)</div>
+            <div class="timeline-step">2. Hold Lungs Full (4s)</div>
+            <div class="timeline-step">3. Exhale (4s)</div>
+            <div class="timeline-step">4. Hold Stillness (4s)</div>
+          </div>
+
+          <!-- Controls -->
+          <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+            <button class="btn btn-primary" id="breathingStartBtn">
+              <span>▶</span> Start Box Breathing
+            </button>
+            <button class="btn btn-coral" id="breathingStopBtn" style="display: none;">
+              <span>⏹</span> End Session
+            </button>
+          </div>
+
+          <!-- Live Session Stats -->
+          <div class="breathing-stats">
+            <div>Completed Cycles: <strong id="breathingCycleCount" style="color: var(--color-forest-green);">0</strong></div>
+            <div>Practice Time: <strong id="breathingTotalDuration" style="color: var(--color-forest-green);">0:00</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 3: GUIDED MEDITATION TIMER
+           ============================================== -->
+      <section class="tab-panel" id="meditationTab">
+        <div class="timer-container">
+          <span class="badge badge-sage">Mindful Reset Timer</span>
+          <h2 id="timerSessionLabel" style="margin: 0.5rem 0 0.3rem;">Morning Micro-Meditation</h2>
+          <p>Circular countdown with synthesized Tibetan singing bowl chimes at start and finish.</p>
+
+          <!-- SVG Countdown Ring -->
+          <div class="timer-svg-wrapper">
+            <svg class="timer-svg" viewBox="0 0 240 240">
+              <circle class="timer-circle-bg" cx="120" cy="120" r="110"></circle>
+              <circle class="timer-circle-progress" id="timerProgressRing" cx="120" cy="120" r="110"></circle>
+            </svg>
+            <div class="timer-text-content">
+              <div class="timer-display-digits" id="timerDigits">05:00</div>
+              <span style="font-size: 0.85rem; color: var(--color-charcoal-muted); letter-spacing: 0.05em; text-transform: uppercase;">Time Remaining</span>
+            </div>
+          </div>
+
+          <!-- Duration Preset Pills -->
+          <div class="timer-preset-pills">
+            <button class="preset-pill" data-minutes="2">2 min (Quick)</button>
+            <button class="preset-pill active" data-minutes="5">5 min (Standard)</button>
+            <button class="preset-pill" data-minutes="10">10 min (Deep)</button>
+            <button class="preset-pill" data-minutes="15">15 min</button>
+            <button class="preset-pill" data-minutes="20">20 min</button>
+          </div>
+
+          <!-- Timer Action Buttons -->
+          <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+            <button class="btn btn-primary" id="timerStartBtn">▶ Begin Meditation</button>
+            <button class="btn btn-secondary" id="timerPauseBtn" style="display: none;">⏸ Pause</button>
+            <button class="btn btn-outline" id="timerResetBtn">↺ Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 4: 10 DESK-FRIENDLY YOGA GALLERY
+           ============================================== -->
+      <section class="tab-panel" id="yogaTab">
+        <div style="margin-bottom: 2rem;">
+          <span class="badge badge-sage">Study Posture Fatigue Relief</span>
+          <h2 style="margin: 0.4rem 0 0.3rem;">Curated Micro-Yoga for Desk & Chair</h2>
+          <p>10 authentic chair-friendly poses designed to undo hunching, screen neck tension, and typing strain.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="yoga-filter-bar">
+          <button class="btn btn-primary yoga-filter-btn active" data-filter="all">All Poses (10)</button>
+          <button class="btn btn-secondary yoga-filter-btn" data-filter="neck">Neck & Trapezius</button>
+          <button class="btn btn-secondary yoga-filter-btn" data-filter="spine">Spine & Chest</button>
+          <button class="btn btn-secondary yoga-filter-btn" data-filter="wrists">Wrists & Forearms</button>
+          <button class="btn btn-secondary yoga-filter-btn" data-filter="hips">Hips & Glutes</button>
+          <button class="btn btn-secondary yoga-filter-btn" data-filter="mind">Restorative Rest</button>
+        </div>
+
+        <!-- Poses Cards Grid -->
+        <div class="yoga-grid" id="yogaPosesGrid">
+          <!-- Loaded dynamically via js/yoga.js -->
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 5: DAILY MOOD & STRESS JOURNAL (CHART.JS)
+           ============================================== -->
+      <section class="tab-panel" id="journalTab">
+        <div style="margin-bottom: 1.5rem;">
+          <span class="badge badge-sage">Cognitive Self-Awareness</span>
+          <h2 style="margin: 0.4rem 0 0.3rem;">Daily Mood & Stress Trend Journal</h2>
+          <p>Log your daily emotional baseline (1–5) to visualize mental stress fluctuation during exam weeks.</p>
+        </div>
+
+        <!-- Metrics Cards Row -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+          <div class="card" style="padding: 1.25rem; text-align: center;">
+            <div style="font-size: 0.85rem; color: var(--color-charcoal-muted);">Average Stress Rating</div>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--color-forest-dark); margin: 0.2rem 0;" id="metricAvgStress">3.0 / 5</div>
+            <small style="color: var(--color-sage-green); font-weight: 600;">Scale 1 (Calm) to 5 (Panic)</small>
+          </div>
+          <div class="card" style="padding: 1.25rem; text-align: center;">
+            <div style="font-size: 0.85rem; color: var(--color-charcoal-muted);">Total Check-Ins</div>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--color-forest-dark); margin: 0.2rem 0;" id="metricTotalLogs">7</div>
+            <small style="color: var(--color-charcoal-muted);">Logged in Database</small>
+          </div>
+          <div class="card" style="padding: 1.25rem; text-align: center;">
+            <div style="font-size: 0.85rem; color: var(--color-charcoal-muted);">Primary Mood Trend</div>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--color-forest-dark); margin: 0.2rem 0;" id="metricDominantMood">Calm</div>
+            <small style="color: var(--color-sage-green); font-weight: 600;">Positive Recovery</small>
+          </div>
+        </div>
+
+        <!-- Two-column Journal Layout -->
+        <div class="journal-layout">
+          <!-- Left Column: Check-in Form -->
+          <div class="card">
+            <h3>New Daily Check-In</h3>
+            <p style="margin-bottom: 1.2rem;">How are you feeling right now?</p>
+
+            <form id="moodCheckInForm">
+              <!-- Stress Slider -->
+              <div class="stress-slider-wrapper">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                  <label style="font-weight: 600; font-size: 0.95rem;">Perceived Stress Level:</label>
+                  <strong id="journalStressValDisplay" style="color: var(--color-forest-green); font-size: 1.1rem;">3 / 5</strong>
+                </div>
+                <input type="range" class="range-slider" id="journalStressSlider" min="1" max="5" value="3" step="1">
+                <div class="slider-labels">
+                  <span>1 (Deeply Calm)</span>
+                  <span>3 (Moderate)</span>
+                  <span>5 (Exam Panic)</span>
+                </div>
+              </div>
+
+              <!-- Mood Category Selector -->
+              <label style="font-weight: 600; font-size: 0.95rem;">Select Primary Emotion:</label>
+              <div class="mood-selector-grid">
+                <button type="button" class="mood-btn active" data-mood="calm">
+                  <span class="emoji">😊</span>
+                  <span>Calm</span>
+                </button>
+                <button type="button" class="mood-btn" data-mood="content">
+                  <span class="emoji">😌</span>
+                  <span>Content</span>
+                </button>
+                <button type="button" class="mood-btn" data-mood="neutral">
+                  <span class="emoji">😐</span>
+                  <span>Neutral</span>
+                </button>
+                <button type="button" class="mood-btn" data-mood="anxious">
+                  <span class="emoji">😰</span>
+                  <span>Anxious</span>
+                </button>
+                <button type="button" class="mood-btn" data-mood="overwhelmed">
+                  <span class="emoji">😫</span>
+                  <span>Panicked</span>
+                </button>
+              </div>
+
+              <!-- Notes field -->
+              <div style="margin: 1.2rem 0;">
+                <label style="font-weight: 600; font-size: 0.95rem; display: block; margin-bottom: 0.4rem;">Reflection Notes (Optional):</label>
+                <textarea id="journalNotesInput" class="card" style="width: 100%; min-height: 80px; padding: 0.75rem; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.9rem;" placeholder="What was causing pressure today? How did breathing or yoga help?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                ✓ Record Mood Check-In
+              </button>
+            </form>
+          </div>
+
+          <!-- Right Column: Chart.js Weekly Trend Curve -->
+          <div>
+            <div class="chart-container-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h3 style="margin: 0;">Stress Fluctuations Over Time</h3>
+                <span class="badge badge-sage">Weekly Curve</span>
+              </div>
+              <div class="chart-canvas-wrapper">
+                <canvas id="stressTrendChart"></canvas>
+              </div>
+            </div>
+
+            <h3 style="margin: 1.5rem 0 0.8rem;">Recent Journal Entries</h3>
+            <div id="journalEntriesList">
+              <!-- Loaded dynamically via js/journal.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 6: AMBIENT SOUNDSCAPES & BINAURAL BEATS
+           ============================================== -->
+      <section class="tab-panel" id="soundscapeTab">
+        <div style="margin-bottom: 1.5rem;">
+          <span class="badge badge-sage">HTML5 Web Audio API Mixer</span>
+          <h2 style="margin: 0.4rem 0 0.3rem;">Ambient Soundscape & Binaural Beats Generator</h2>
+          <p>Synthesized background environments with custom volume mixing. Runs 100% offline without missing external audio files.</p>
+        </div>
+
+        <!-- Master Volume Control -->
+        <div class="card" style="margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h4 style="margin: 0;">Master Volume</h4>
+            <small style="color: var(--color-charcoal-muted);">Balances all active synthesized tracks</small>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem; width: 100%; max-width: 320px;">
+            <span>🔈</span>
+            <input type="range" class="range-slider" id="masterVolumeSlider" min="0" max="1" step="0.05" value="0.8">
+            <span>🔊</span>
+          </div>
+        </div>
+
+        <!-- Sound Tracks Grid -->
+        <div class="soundscape-mixer">
+          <!-- Gentle Rain -->
+          <div class="sound-track-card">
+            <div class="sound-track-header">
+              <span class="sound-track-icon">🌧</span>
+              <button class="btn btn-outline" id="toggleRainBtn" style="padding: 0.35rem 0.85rem; font-size: 0.85rem;">Play ▶</button>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 0.2rem;">Gentle Rain</h4>
+              <p style="font-size: 0.85rem; margin: 0;">Synthesized pink noise with bandpass filtering.</p>
+            </div>
+            <div>
+              <label style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Volume</label>
+              <input type="range" class="range-slider" id="rainVolumeSlider" min="0" max="1" step="0.05" value="0.5">
+            </div>
+          </div>
+
+          <!-- Forest Birds & Stream -->
+          <div class="sound-track-card">
+            <div class="sound-track-header">
+              <span class="sound-track-icon">🍃</span>
+              <button class="btn btn-outline" id="toggleForestBtn" style="padding: 0.35rem 0.85rem; font-size: 0.85rem;">Play ▶</button>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 0.2rem;">Forest Stream</h4>
+              <p style="font-size: 0.85rem; margin: 0;">Soft water textures with algorithmic bird calls.</p>
+            </div>
+            <div>
+              <label style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Volume</label>
+              <input type="range" class="range-slider" id="forestVolumeSlider" min="0" max="1" step="0.05" value="0.5">
+            </div>
+          </div>
+
+          <!-- White / Pink Noise -->
+          <div class="sound-track-card">
+            <div class="sound-track-header">
+              <span class="sound-track-icon">📻</span>
+              <button class="btn btn-outline" id="toggleWhiteNoiseBtn" style="padding: 0.35rem 0.85rem; font-size: 0.85rem;">Play ▶</button>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 0.2rem;">Calm White Noise</h4>
+              <p style="font-size: 0.85rem; margin: 0;">Drowns out chatter in noisy campus libraries.</p>
+            </div>
+            <div>
+              <label style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Volume</label>
+              <input type="range" class="range-slider" id="whiteNoiseVolumeSlider" min="0" max="1" step="0.05" value="0.4">
+            </div>
+          </div>
+
+          <!-- Temple Bells -->
+          <div class="sound-track-card">
+            <div class="sound-track-header">
+              <span class="sound-track-icon">🔔</span>
+              <button class="btn btn-outline" id="toggleBellsBtn" style="padding: 0.35rem 0.85rem; font-size: 0.85rem;">Play ▶</button>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 0.2rem;">Temple Bells</h4>
+              <p style="font-size: 0.85rem; margin: 0;">Mellow harmonic chimes every 9 seconds.</p>
+            </div>
+            <div>
+              <label style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Volume</label>
+              <input type="range" class="range-slider" id="bellsVolumeSlider" min="0" max="1" step="0.05" value="0.5">
+            </div>
+          </div>
+
+          <!-- Binaural Beats (8Hz - 12Hz Alpha Waves) -->
+          <div class="sound-track-card" style="grid-column: 1 / -1; background: var(--color-cream-light); border-color: #E2D3BE;">
+            <div class="sound-track-header">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span class="sound-track-icon">🧠</span>
+                <div>
+                  <h4 style="margin: 0;">Alpha Waves Binaural Beats (8Hz – 12Hz)</h4>
+                  <small style="color: var(--color-charcoal-muted);">Requires stereo headphones. Induces calm, wakeful focus and memory consolidation.</small>
+                </div>
+              </div>
+              <button class="btn btn-outline" id="toggleBinauralBtn" style="padding: 0.45rem 1rem; font-size: 0.9rem;">Play ▶</button>
+            </div>
+            <div style="display: flex; gap: 0.65rem; margin: 0.5rem 0; flex-wrap: wrap;">
+              <span style="font-size: 0.85rem; align-self: center; font-weight: 600;">Frequency:</span>
+              <button class="preset-pill binaural-freq-pill" data-freq="8">8 Hz (Deep Calm)</button>
+              <button class="preset-pill binaural-freq-pill active" data-freq="10">10 Hz (Alpha Study Focus)</button>
+              <button class="preset-pill binaural-freq-pill" data-freq="12">12 Hz (Alertness)</button>
+            </div>
+            <div>
+              <label style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Binaural Volume</label>
+              <input type="range" class="range-slider" id="binauralVolumeSlider" min="0" max="1" step="0.05" value="0.4">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 7: CAMPUS CALM WALL (SOLIDARITY)
+           ============================================== -->
+      <section class="tab-panel" id="calmWallTab">
+        <div style="margin-bottom: 1.5rem;">
+          <span class="badge badge-sage">Peer Solidarity Bulletin Board</span>
+          <h2 style="margin: 0.4rem 0 0.3rem;">Anonymous Campus Calm Wall</h2>
+          <p>Leave a note of encouragement for fellow students pulling all-nighters or fighting exam anxiety.</p>
+        </div>
+
+        <!-- Post Form -->
+        <div class="card" style="margin-bottom: 2rem;">
+          <h3>Post an Encouraging Thought</h3>
+          <form id="calmWallForm" style="margin-top: 1rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+              <input type="text" id="wallAuthorInput" class="card" style="padding: 0.75rem; border-radius: var(--radius-sm); font-family: inherit;" placeholder="Your Name or Alias (e.g. CS Sophomore)" maxlength="50">
+              <input type="text" id="wallTagInput" class="card" style="padding: 0.75rem; border-radius: var(--radius-sm); font-family: inherit;" placeholder="Category Tag (e.g. Breathwork, Exams, Motivation)" maxlength="30">
+            </div>
+            <textarea id="wallMsgInput" class="card" style="width: 100%; min-height: 80px; padding: 0.75rem; border-radius: var(--radius-sm); font-family: inherit; margin-bottom: 1rem;" placeholder="Write a supportive message to remind someone they are capable..." maxlength="280" required></textarea>
+            <button type="submit" class="btn btn-primary">
+              💌 Share Message on Campus Wall
+            </button>
+          </form>
+        </div>
+
+        <!-- Notes Bulletin Grid -->
+        <div class="calm-wall-grid" id="calmWallGrid">
+          <!-- Loaded dynamically via js/calmWall.js -->
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 8: AI EXAM AFFIRMATION GENERATOR
+           ============================================== -->
+      <section class="tab-panel" id="affirmationsTab">
+        <div style="max-width: 680px; margin: 0 auto; text-align: center;">
+          <span class="badge badge-sage">Cognitive Reframing</span>
+          <h2 style="margin: 0.4rem 0 0.5rem;">Exam Affirmations & Imposter Syndrome Shield</h2>
+          <p style="margin-bottom: 2rem;">Counter catastrophic exam worries with evidence-based cognitive reframing cards.</p>
+
+          <div class="card" style="padding: 3rem 2rem; position: relative; background: var(--color-cream-light); border: 2px solid #E5D5C1;">
+            <span class="badge badge-coral" id="displayAffirmationCategory" style="position: absolute; top: 1.25rem; left: 1.5rem;">Perspective</span>
+            <blockquote id="displayAffirmationQuote" style="font-family: var(--font-heading); font-size: 1.6rem; font-style: italic; color: var(--color-forest-dark); margin: 2rem 0 1.5rem; line-height: 1.4;">
+              "One test does not define your intellect, your creative value, or your future potential."
+            </blockquote>
+            <div style="background: rgba(255, 255, 255, 0.7); border-radius: var(--radius-md); padding: 1.2rem; margin-top: 1.5rem;">
+              <strong style="color: var(--color-forest-dark); display: block; margin-bottom: 0.3rem;">🌱 Mindful Reflection Prompt:</strong>
+              <p id="displayAffirmationPrompt" style="margin: 0; font-size: 0.95rem; color: var(--color-charcoal);">
+                Take one slow breath right now: 4 seconds in through the nose, 4 seconds out.
+              </p>
+            </div>
+            <button class="btn btn-primary" id="shuffleAffirmationBtn" style="margin-top: 2rem;">
+              🎲 Next Cognitive Reframing Card
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 9: ABOUT & MINDFUL SCIENCE
+           ============================================== -->
+      <section class="tab-panel" id="aboutTab">
+        <div class="card" style="max-width: 820px; margin: 0 auto;">
+          <h2>About ZenZone: CalmCode Retreat</h2>
+          <p style="margin: 1rem 0;">
+            <strong>ZenZone</strong> was created to solve a pervasive university challenge: students facing final exams undergo severe psychological stress, sleep deprivation, and acute panic attacks. Existing wellness apps demand expensive subscriptions or hour-long courses that cramming students cannot adopt. ZenZone provides instant, 2-minute micro-interventions grounded in neurobiology.
+          </p>
+
+          <h3 style="margin-top: 1.8rem;">Clinical Foundation</h3>
+          <ul style="padding-left: 1.4rem; color: var(--color-charcoal-muted); margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.6rem;">
+            <li><strong>Box Breathing (Sama Vritti):</strong> Equal 4s cycles increase vagal tone, triggering acetylcholine release to slow heart rate and blood pressure within 60 seconds.</li>
+            <li><strong>5-4-3-2-1 Grounding:</strong> Forces the prefrontal cortex to disengage from amygdala-driven catastrophic spiraling by reconnecting with sensory data.</li>
+            <li><strong>Binaural Beats (Alpha 10Hz):</strong> Uses auditory frequency-following response to facilitate alpha electroencephalographic brain rhythms associated with relaxed alertness.</li>
+            <li><strong>Desk & Chair Micro-Yoga:</strong> Counters cervical disc compression, forward head posture, and carpal tunnel tension caused by laptop study.</li>
+          </ul>
+
+          <h3 style="margin-top: 1.8rem;">System Architecture (3-Tier)</h3>
+          <p style="margin-top: 0.6rem;">
+            ZenZone adheres to a full-stack 3-tier architecture:
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <div class="card" style="background: var(--color-soft-sage);">
+              <strong>1. Presentation Tier</strong>
+              <p style="font-size: 0.85rem; margin-top: 0.3rem;">HTML5, CSS3, ES6+ JavaScript, Chart.js, and Web Audio API synthesizer.</p>
+            </div>
+            <div class="card" style="background: var(--color-soft-sage);">
+              <strong>2. Application / Logic Tier</strong>
+              <p style="font-size: 0.85rem; margin-top: 0.3rem;">Node.js & Express REST API with server-side XSS sanitization and payload validation.</p>
+            </div>
+            <div class="card" style="background: var(--color-soft-sage);">
+              <strong>3. Data Tier</strong>
+              <p style="font-size: 0.85rem; margin-top: 0.3rem;">Indexed persistent storage with pagination, query filtering, and offline LocalStorage sync.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==============================================
+       EXAM PANIC SOS CRISIS DE-ESCALATION MODAL
+       ============================================== -->
+  <div class="sos-overlay" id="sosOverlay">
+    <div class="sos-modal">
+      <button class="sos-close-btn" id="sosCloseBtn" title="Exit SOS Mode">✕</button>
+
+      <!-- Step 1: Pre-Stress Level Assessment -->
+      <div class="sos-step-pane active" id="sosStep1">
+        <span class="badge badge-coral">Step 1 of 5: Immediate Triaging</span>
+        <h2 style="margin: 0.5rem 0 0.3rem; color: var(--color-coral);">Exam Panic Emergency Reset</h2>
+        <p>You are in a safe space. Rate your current panic or anxiety level before we begin.</p>
+        <div class="stress-slider-wrapper" style="margin: 2rem 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span>Current Stress Rating:</span>
+            <strong id="sosPreStressVal" style="font-size: 1.5rem; color: var(--color-coral);">5</strong>
+          </div>
+          <input type="range" class="range-slider" id="sosPreStressSlider" min="1" max="5" value="5">
+          <div class="slider-labels">
+            <span>1 (Manageable)</span>
+            <span>3 (Anxious)</span>
+            <span>5 (Severe Panic / Shaking)</span>
+          </div>
+        </div>
+        <button class="btn btn-coral" id="sosBtnToStep2" style="width: 100%;">
+          Begin Grounding Protocol →
+        </button>
+      </div>
+
+      <!-- Step 2: 5-4-3-2-1 Sensory Grounding Technique -->
+      <div class="sos-step-pane" id="sosStep2">
+        <span class="badge badge-sage">Step 2 of 5: Neurobiological Reset</span>
+        <h2 style="margin: 0.5rem 0 0.3rem;">5-4-3-2-1 Sensory Grounding</h2>
+        <p>Engage your senses right now to disengage the panic feedback loop.</p>
+        <div class="grounding-list">
+          <div class="grounding-item">
+            <div class="grounding-count">5</div>
+            <div>Notice <strong>5 things you can see</strong> around your desk right now.</div>
+          </div>
+          <div class="grounding-item">
+            <div class="grounding-count">4</div>
+            <div>Feel <strong>4 physical sensations</strong> (feet on floor, shirt on shoulders, chair beneath you).</div>
+          </div>
+          <div class="grounding-item">
+            <div class="grounding-count">3</div>
+            <div>Listen for <strong>3 sounds</strong> (gentle rain audio, computer fan, clock tick).</div>
+          </div>
+          <div class="grounding-item">
+            <div class="grounding-count">2</div>
+            <div>Notice <strong>2 smells or physical breaths</strong> in through your nostrils.</div>
+          </div>
+          <div class="grounding-item">
+            <div class="grounding-count">1</div>
+            <div>Say <strong>1 true affirmation:</strong> "I am safe and this panic will pass."</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" id="sosBtnToStep3" style="width: 100%;">
+          Proceed to 60s Calming Breath →
+        </button>
+      </div>
+
+      <!-- Step 3: Guided 60-Second De-escalation Breathing -->
+      <div class="sos-step-pane" id="sosStep3" style="text-align: center;">
+        <span class="badge badge-sage">Step 3 of 5: Physiological Sigh</span>
+        <h2 style="margin: 0.5rem 0 0.3rem;">Slow Your Heart Rate</h2>
+        <p>Follow the breathing circle while listening to soothing rain.</p>
+        <div class="breathing-orb-stage" style="margin: 1.5rem auto; width: 220px; height: 220px;">
+          <div class="breathing-circle" id="sosBreathingCircle" style="width: 160px; height: 160px;">
+            <span id="sosBreathingPhase" style="font-size: 1.15rem; font-weight: 600;">Inhale (4s)</span>
+          </div>
+        </div>
+        <div id="sosBreathingCountdown" style="font-size: 1.3rem; font-weight: 700; color: var(--color-forest-green); margin-bottom: 1.5rem;">
+          60s remaining
+        </div>
+        <button class="btn btn-primary" id="sosBtnToStep4" style="width: 100%; display: none;">
+          Continue to Cognitive Affirmation →
+        </button>
+      </div>
+
+      <!-- Step 4: Cognitive Reframing Affirmation Card -->
+      <div class="sos-step-pane" id="sosStep4">
+        <span class="badge badge-sage">Step 4 of 5: Perspective Shield</span>
+        <h2 style="margin: 0.5rem 0 0.3rem;">Cognitive Reframing</h2>
+        <div class="affirmation-quote-box">
+          <blockquote id="sosAffirmationQuote" style="margin: 0; line-height: 1.4;">
+            "One exam cannot measure your boundless human worth, creativity, or future success."
+          </blockquote>
+          <div id="sosAffirmationPrompt" style="margin-top: 0.8rem; font-size: 0.95rem; font-style: normal; color: var(--color-charcoal-muted);">
+            Trust your brain to recall what you have studied once you are calm.
+          </div>
+        </div>
+        <button class="btn btn-primary" id="sosBtnToStep5" style="width: 100%;">
+          Assess Post-Breathing Relief →
+        </button>
+      </div>
+
+      <!-- Step 5: Post-Stress Level Assessment & Stress Delta -->
+      <div class="sos-step-pane" id="sosStep5">
+        <span class="badge badge-sage">Step 5 of 5: Check Progress</span>
+        <h2 style="margin: 0.5rem 0 0.3rem;">How Does Your Body Feel Now?</h2>
+        <p>Rate your current stress level after completing the grounding protocol.</p>
+        <div class="stress-slider-wrapper" style="margin: 2rem 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span>Relief Rating:</span>
+            <strong id="sosPostStressVal" style="font-size: 1.5rem; color: var(--color-forest-green);">2</strong>
+          </div>
+          <input type="range" class="range-slider" id="sosPostStressSlider" min="1" max="5" value="2">
+          <div class="slider-labels">
+            <span>1 (Calm & Grounded)</span>
+            <span>3 (Neutral)</span>
+            <span>5 (Still Panicked)</span>
+          </div>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <label style="font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 0.4rem;">Brief Note (Saved to your journal):</label>
+          <input type="text" id="sosReflectionNotes" class="card" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); font-family: inherit;" value="SOS routine completed. Heart rate and hands stabilized.">
+        </div>
+        <button class="btn btn-coral" id="sosBtnFinish" style="width: 100%;">
+          ✓ Log Relief & Return to Study
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       DESK YOGA POSE DETAILS MODAL
+       ============================================== -->
+  <div class="modal-overlay" id="yogaModal">
+    <div class="modal-content">
+      <button class="sos-close-btn" id="yogaModalCloseBtn">✕</button>
+      <div style="margin-bottom: 1rem;">
+        <span class="badge badge-sage" id="modalPoseTarget">Neck & Trapezius</span>
+        <h2 id="modalPoseTitle" style="margin: 0.4rem 0 0.2rem;">Seated Neck Release</h2>
+        <div id="modalPoseSanskrit" style="font-style: italic; color: var(--color-charcoal-muted);">Kantha Sanchalana</div>
+      </div>
+      <p id="modalPoseDesc" style="margin-bottom: 1.2rem; color: var(--color-charcoal);"></p>
+      
+      <div style="background: var(--color-soft-sage); border-radius: var(--radius-md); padding: 1.2rem; margin-bottom: 1.2rem;">
+        <strong style="color: var(--color-forest-dark);">💡 Student Study Benefit:</strong>
+        <p id="modalPoseBenefit" style="margin: 0.2rem 0 0; color: var(--color-charcoal); font-size: 0.95rem;"></p>
+      </div>
+
+      <div style="margin-bottom: 1.2rem;">
+        <strong style="color: var(--color-forest-dark);">🌬 Breathing Cue:</strong>
+        <p id="modalPoseBreathing" style="margin: 0.2rem 0 0; font-style: italic; color: var(--color-charcoal); font-size: 0.95rem;"></p>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <strong style="color: var(--color-forest-dark);">🧘 Alignment & Step-by-Step Instructions:</strong>
+        <ul id="modalPoseCues" style="padding-left: 1.2rem; margin-top: 0.5rem; color: var(--color-charcoal-muted); display: flex; flex-direction: column; gap: 0.4rem;"></ul>
+      </div>
+
+      <div style="margin-bottom: 1.5rem; font-size: 0.85rem; color: #8A645A;">
+        <strong>⚠️ Contraindications:</strong> <span id="modalPoseContra"></span>
+      </div>
+
+      <!-- Pose Stretch Timer -->
+      <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(169, 191, 168, 0.3); padding-top: 1.2rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span style="font-size: 0.82rem; color: var(--color-charcoal-muted); text-transform: uppercase;">Hold Duration</span>
+          <div id="modalStretchTimerDisplay" style="font-size: 1.8rem; font-weight: 700; color: var(--color-forest-dark);">01:00</div>
+        </div>
+        <button class="btn btn-primary" id="modalStretchTimerBtn">Start Stretch Timer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       SCREEN DIMMER & POSTURE BREAK OVERLAY
+       ============================================== -->
+  <div class="screen-dimmer-overlay" id="screenDimmerOverlay">
+    <div style="max-width: 500px;">
+      <span style="font-size: 3rem;">🌙</span>
+      <h2 style="color: #FFFFFF; margin: 1rem 0 0.5rem;">45-Minute Posture & Eye Break</h2>
+      <p style="color: #C2D1C1; margin-bottom: 1.5rem; font-size: 1.05rem;">
+        You have been studying continuously. Direct your gaze at an object 20 feet away for 20 seconds. Roll your shoulders back 5 times and drink a glass of water.
+      </p>
+      <button class="btn btn-primary" id="dismissDimmerBtn" style="background: var(--color-sage-green); color: var(--color-charcoal);">
+        ✓ I am Refreshed — Return to Study
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Stack -->
+  <div id="toastContainer"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <span style="font-size: 1.4rem;">🌿</span>
+        <strong>ZenZone: CalmCode Retreat</strong>
+      </div>
+      <div class="footer-copy">
+        Crafted for Student Well-Being. 100% Free, Accessible & Client-Verified.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/breathing.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/sos.js"></script>
+  <script src="js/journal.js"></script>
+  <script src="js/yoga.js"></script>
+  <script src="js/soundscape.js"></script>
+  <script src="js/calmWall.js"></script>
+  <script src="js/screenDimmer.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

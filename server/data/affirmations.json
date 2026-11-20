@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "quote": "One test does not define your intellect, your creative value, or your future potential.",
+    "category": "Perspective",
+    "prompt": "Remember a past challenge that felt overwhelming at the time, which you navigated successfully."
+  },
+  {
+    "id": 2,
+    "quote": "Your breath is an unshakeable anchor. When you slow your breath down, your mind follows.",
+    "category": "Physiology",
+    "prompt": "Take one slow breath right now: 4 seconds in through the nose, 4 seconds out."
+  },
+  {
+    "id": 3,
+    "quote": "You don't have to know everything; you just need to do the next small task in front of you.",
+    "category": "Focus",
+    "prompt": "What is the single smallest, most manageable concept you can review next?"
+  },
+  {
+    "id": 4,
+    "quote": "Anxiety is simply adrenaline without direction. Channel that surge into steady, curious concentration.",
+    "category": "Reframing",
+    "prompt": "Acknowledge the physical sensation of urgency and tell yourself: 'I am alert and capable.'"
+  },
+  {
+    "id": 5,
+    "quote": "Rest is not a reward you earn after finishing everything; it is a biological prerequisite for memory consolidation.",
+    "category": "Rest",
+    "prompt": "Give your eyes 60 seconds away from any screen right now."
+  },
+  {
+    "id": 6,
+    "quote": "I release the illusion of perfection and embrace the steady beauty of consistent effort.",
+    "category": "Self-Compassion",
+    "prompt": "How can you treat yourself with the same kindness you would show a stressed close friend today?"
+  },
+  {
+    "id": 7,
+    "quote": "Your preparation has planted seeds. Trust your brain to retrieve what you have studied when you stay calm.",
+    "category": "Trust",
+    "prompt": "Visualize yourself sitting calmly at the exam desk, breathing steadily through each question."
+  },
+  {
+    "id": 8,
+    "quote": "You are far more than a grade or an algorithm. You are a whole, resilient, evolving human being.",
+    "category": "Identity",
+    "prompt": "Name two strengths you possess that no multiple choice test can ever measure."
+  },
+  {
+    "id": 9,
+    "quote": "Feel your feet on the ground and your sit bones on the chair. You are completely safe in this moment.",
+    "category": "Grounding",
+    "prompt": "Notice 3 physical contact points where your body is supported right now."
+  },
+  {
+    "id": 10,
+    "quote": "Progress happens one question, one line of code, and one calm breath at a time.",
+    "category": "Pacing",
+    "prompt": "Break the remaining preparation into 20-minute blocks with gentle stretch intervals."
+  },
+  {
+    "id": 11,
+    "quote": "Mistakes during revision are not failures; they are the exact friction points where durable learning happens.",
+    "category": "Growth",
+    "prompt": "Thank yourself for finding a misunderstanding today rather than tomorrow."
+  },
+  {
+    "id": 12,
+    "quote": "Lower your shoulders, unclamp your teeth, and let your belly soften. Release the armor.",
+    "category": "Body Release",
+    "prompt": "Notice if your shoulders are creeping up to your ears, and gently guide them downward."
+  },
+  {
+    "id": 13,
+    "quote": "This intense exam period is temporary. The calm open space of freedom is waiting just ahead.",
+    "category": "Perspective",
+    "prompt": "What relaxing activity are you looking forward to enjoying once finals finish?"
+  },
+  {
+    "id": 14,
+    "quote": "You have overcome difficult academic weeks before, and you will navigate this one too.",
+    "category": "Resilience",
+    "prompt": "Remind yourself: 'I have faced uncertainty before, and I survived it.'"
+  },
+  {
+    "id": 15,
+    "quote": "A clear, well-rested mind outperforms a panic-crammed mind every single time.",
+    "category": "Wisdom",
+    "prompt": "Commit to getting adequate sleep tonight to give your hippocampus time to store memories."
+  },
+  {
+    "id": 16,
+    "quote": "Give yourself permission to pause. Even five minutes of intentional stillness resets cognitive overload.",
+    "category": "Micro-Break",
+    "prompt": "Close your eyes and listen to the ambient sound of your room for 30 seconds."
+  },
+  {
+    "id": 17,
+    "quote": "Imposter syndrome is just a sign that you care deeply about doing well. It does not reflect reality.",
+    "category": "Reframing",
+    "prompt": "You earned your place here through your own hard work and perseverance."
+  },
+  {
+    "id": 18,
+    "quote": "Treat every exam question not as an interrogation, but as an invitation to share what you understand.",
+    "category": "Mindset",
+    "prompt": "Shift from 'What if I fail?' to 'How much can I clearly express?'"
+  },
+  {
+    "id": 19,
+    "quote": "In the midst of high academic pressure, choose to be the eye of the storm.",
+    "category": "Serenity",
+    "prompt": "Feel the quiet stillness that always exists underneath passing emotional waves."
+  },
+  {
+    "id": 20,
+    "quote": "Be proud of yourself for showing up today, even when you felt fatigued or uncertain.",
+    "category": "Gratitude",
+    "prompt": "Place a hand over your heart, take a deep breath, and say 'Thank you' to yourself."
+  }
+]

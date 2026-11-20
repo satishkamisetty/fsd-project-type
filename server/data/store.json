@@ -1,0 +1,153 @@
+{
+  "moods": [
+    {
+      "id": "m1",
+      "stressLevel": 4,
+      "mood": "anxious",
+      "notes": "Finals week kicking off. Linear Algebra proof exam tomorrow morning.",
+      "tags": [
+        "exam",
+        "sleep-deprived"
+      ],
+      "date": "2026-11-13T07:46:42.034Z"
+    },
+    {
+      "id": "m2",
+      "stressLevel": 5,
+      "mood": "overwhelmed",
+      "notes": "Stuck on Algorithms dynamic programming assignments. Feeling chest tightness.",
+      "tags": [
+        "study-fatigue",
+        "exam"
+      ],
+      "date": "2026-11-14T07:46:42.034Z"
+    },
+    {
+      "id": "m3",
+      "stressLevel": 3,
+      "mood": "neutral",
+      "notes": "Used ZenZone box breathing for 6 minutes before heading into lab quiz.",
+      "tags": [
+        "breathing",
+        "midterms"
+      ],
+      "date": "2026-11-15T07:46:42.034Z"
+    },
+    {
+      "id": "m4",
+      "stressLevel": 4,
+      "mood": "anxious",
+      "notes": "Late night revision. Shoulders and neck feeling very tense.",
+      "tags": [
+        "cramming",
+        "posture"
+      ],
+      "date": "2026-11-16T07:46:42.034Z"
+    },
+    {
+      "id": "m5",
+      "stressLevel": 2,
+      "mood": "content",
+      "notes": "Practiced 10-minute chair yoga stretches and Tibetan bell meditation.",
+      "tags": [
+        "desk-yoga",
+        "calm"
+      ],
+      "date": "2026-11-17T07:46:42.034Z"
+    },
+    {
+      "id": "m6",
+      "stressLevel": 2,
+      "mood": "calm",
+      "notes": "Review complete. Feeling much more grounded and mentally centered.",
+      "tags": [
+        "focus",
+        "prepared"
+      ],
+      "date": "2026-11-18T07:46:42.034Z"
+    },
+    {
+      "id": "m7",
+      "stressLevel": 1,
+      "mood": "calm",
+      "notes": "Exam went smoothly. Grateful for taking intentional micro-breaks!",
+      "tags": [
+        "success",
+        "relief"
+      ],
+      "date": "2026-11-19T07:46:42.034Z"
+    },
+    {
+      "id": "m_1795074402048_tgv2",
+      "stressLevel": 1,
+      "mood": "calm",
+      "notes": "Automated in-process integration test.",
+      "tags": [
+        "integration",
+        "test"
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "s1",
+      "type": "Box Breathing",
+      "title": "Morning 4-4-4-4 Nervous System Reset",
+      "durationSeconds": 240,
+      "completed": true,
+      "completedAt": "2026-11-17T07:46:42.034Z"
+    },
+    {
+      "id": "s2",
+      "type": "Meditation",
+      "title": "Exam Anxiety Decompression",
+      "durationSeconds": 600,
+      "completed": true,
+      "completedAt": "2026-11-18T07:46:42.034Z"
+    },
+    {
+      "id": "s3",
+      "type": "Desk Yoga",
+      "title": "Neck & Upper Back Relief Flow",
+      "durationSeconds": 300,
+      "completed": true,
+      "completedAt": "2026-11-19T07:46:42.034Z"
+    }
+  ],
+  "calmWall": [
+    {
+      "id": "cw1",
+      "author": "CS Sophomore",
+      "tag": "Exams",
+      "message": "Remember that your brain cannot solve complex problems in fight-or-flight mode. Take 3 deep breaths before starting section 2.",
+      "likes": 14,
+      "createdAt": "2026-11-17T07:46:42.034Z"
+    },
+    {
+      "id": "cw2",
+      "author": "Pre-Med Senior",
+      "tag": "Solidarity",
+      "message": "No grade defines your humanity or future success. Drink a glass of water, unclamp your jaw, and give yourself credit for trying hard.",
+      "likes": 22,
+      "createdAt": "2026-11-18T07:46:42.034Z"
+    },
+    {
+      "id": "cw3",
+      "author": "Engineering Junior",
+      "tag": "Breathwork",
+      "message": "Did the 2-minute SOS breathing right before my database test today—it honestly stopped my hands from shaking. You got this!",
+      "likes": 9,
+      "createdAt": "2026-11-19T07:46:42.034Z"
+    }
+  ],
+  "sosLogs": [
+    {
+      "id": "sos1",
+      "preStress": 5,
+      "postStress": 2,
+      "stressDelta": 3,
+      "reflection": "Acute anxiety before morning exam reduced significantly after grounding & box breathing cycle.",
+      "timestamp": "2026-11-18T07:46:42.034Z"
+    }
+  ]
+}

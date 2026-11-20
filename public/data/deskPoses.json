@@ -1,0 +1,190 @@
+[
+  {
+    "id": "seated-neck-release",
+    "name": "Seated Neck Release",
+    "sanskrit": "Kantha Sanchalana",
+    "targetArea": "Neck & Trapezius",
+    "durationSeconds": 60,
+    "difficulty": "Gentle",
+    "description": "Slow, mindful lateral neck stretch that melts away cervical spine tension accumulated from hours of looking down at laptops and lecture slides.",
+    "alignmentCues": [
+      "Sit tall with your feet flat on the floor and spine erect.",
+      "Gently drop your right ear toward your right shoulder without lifting the shoulder.",
+      "Place your right hand softly over your left ear without pulling—let gravity do the work.",
+      "Hold for 5 slow breaths, release, and repeat on the left side."
+    ],
+    "breathingCue": "Inhale to lengthen your spine, exhale to release side neck tightness.",
+    "studyBenefit": "Relieves tension headaches and reduces forward head posture strain.",
+    "contraindications": "Avoid if experiencing acute cervical herniation or sharp neck pain."
+  },
+  {
+    "id": "seated-spinal-twist",
+    "name": "Seated Spinal Twist",
+    "sanskrit": "Ardha Matsyendrasana (Chair)",
+    "targetArea": "Spine & Core",
+    "durationSeconds": 90,
+    "difficulty": "Gentle",
+    "description": "Gentle rotational twist using your desk chair to restore thoracic mobility and encourage natural spinal disc hydration during long study sessions.",
+    "alignmentCues": [
+      "Sit sideways on your chair or centered with feet planted hip-width apart.",
+      "Inhale deeply to lift the crown of your head upward.",
+      "Exhale and twist gently toward the right, holding the backrest with both hands.",
+      "Keep both sit bones equally grounded and gaze softly over your right shoulder.",
+      "Hold for 5 deep breaths, then switch to the left side."
+    ],
+    "breathingCue": "Inhale to find vertical length; exhale to rinse out muscular tension.",
+    "studyBenefit": "Eases lower back stiffness and aids digestion slowed by sedentary sitting.",
+    "contraindications": "Twist gently without forcing; avoid deep twists if experiencing acute disc injury."
+  },
+  {
+    "id": "seated-cat-cow",
+    "name": "Seated Cat-Cow Stretch",
+    "sanskrit": "Marjaryasana-Bitilasana",
+    "targetArea": "Entire Spine & Chest",
+    "durationSeconds": 60,
+    "difficulty": "Gentle",
+    "description": "A dynamic spinal flexion and extension rhythm that synchronizes movement with breath to re-energize a sluggish, desk-bound body.",
+    "alignmentCues": [
+      "Place both hands firmly on your knees with feet grounded.",
+      "Cow: Inhale, arch your back forward, lift your chest, and gaze gently toward the ceiling.",
+      "Cat: Exhale, round your spine backward, tuck your chin to your chest, and draw your navel in.",
+      "Flow smoothly between both states for 6 to 8 complete breath cycles."
+    ],
+    "breathingCue": "Inhale on the heart-opening arch; exhale on the rounding back expansion.",
+    "studyBenefit": "Improves spinal circulation and breaks up mental grogginess immediately.",
+    "contraindications": "Keep movement within a comfortable, pain-free range."
+  },
+  {
+    "id": "wrist-finger-release",
+    "name": "Wrist & Finger Decompressor",
+    "sanskrit": "Manibandha Naman",
+    "targetArea": "Wrists, Forearms & Hands",
+    "durationSeconds": 60,
+    "difficulty": "Gentle",
+    "description": "Targeted forearm extensor and flexor release that counters repetitive typing fatigue, trackpad strain, and pen-gripping tension.",
+    "alignmentCues": [
+      "Extend your right arm straight in front of you at shoulder height with palm facing forward.",
+      "Use your left hand to gently draw your right fingertips backward toward your forearm.",
+      "Hold for 15 seconds, feeling a gentle stretch through the inner wrist and palm.",
+      "Flip the hand so fingers point downward and palm faces your chest; gently press back.",
+      "Rotate both wrists in circles 5 times each way, then repeat with the left hand."
+    ],
+    "breathingCue": "Keep breathing steadily through your nose while softening shoulder muscles.",
+    "studyBenefit": "Prevents repetitive strain injuries and relieves cramping from handwritten exams.",
+    "contraindications": "Never pull aggressively on finger joints; ease off if tingling occurs."
+  },
+  {
+    "id": "seated-eagle-arms",
+    "name": "Seated Eagle Arms",
+    "sanskrit": "Garudasana Arms",
+    "targetArea": "Upper Back & Shoulder Blades",
+    "durationSeconds": 75,
+    "difficulty": "Moderate",
+    "description": "Deep rhomboid and shoulder stretch that broadens the space between your shoulder blades where stress and hunching concentrate.",
+    "alignmentCues": [
+      "Bring both arms out in front at 90-degree angles to your body.",
+      "Cross your right elbow under your left elbow; wrap forearms and press palms together.",
+      "(If palms do not touch, hold opposite shoulders like a hug).",
+      "Gently lift your elbows to shoulder level while keeping shoulders down away from ears.",
+      "Hold for 4 full breaths, unwind, and switch arms with left under right."
+    ],
+    "breathingCue": "Send your breath directly into the space between your shoulder blades.",
+    "studyBenefit": "Unlocks persistent upper-back knots caused by hunching over a keyboard.",
+    "contraindications": "Modify to a shoulder-hug variation if suffering from acute rotator cuff soreness."
+  },
+  {
+    "id": "seated-forward-fold",
+    "name": "Seated Forward Fold",
+    "sanskrit": "Paschimottanasana (Chair)",
+    "targetArea": "Lower Back & Hamstrings",
+    "durationSeconds": 90,
+    "difficulty": "Gentle",
+    "description": "A restorative calming inversion done seated that cools down an overstimulated brain and gently lengthens the lumbar spine.",
+    "alignmentCues": [
+      "Sit near the front edge of your chair with feet wider than hip-width apart.",
+      "Rest hands on thighs, take a slow deep inhale, and lengthen your spine.",
+      "Exhale and hinge from your hips, lowering your torso between or onto your thighs.",
+      "Let your arms hang heavily toward the floor and relax your neck completely.",
+      "Breathe softly for 6 slow breaths, then roll up one vertebra at a time."
+    ],
+    "breathingCue": "Exhale with a gentle sigh to trigger the parasympathetic rest response.",
+    "studyBenefit": "Relieves lower back compression and promotes blood circulation to the brain.",
+    "contraindications": "Avoid hanging head below hips if prone to dizziness or high blood pressure."
+  },
+  {
+    "id": "chair-figure-four",
+    "name": "Chair Pigeon / Figure-4",
+    "sanskrit": "Eka Pada Rajakapotasana (Chair)",
+    "targetArea": "Hips & Glutes",
+    "durationSeconds": 90,
+    "difficulty": "Moderate",
+    "description": "Opens tight outer hips and the piriformis muscle that tighten severely during prolonged sitting in library carrels.",
+    "alignmentCues": [
+      "Sit with both feet grounded and back away from the backrest.",
+      "Lift your right ankle and cross it over your left knee, creating a number 4 shape.",
+      "Flex your right foot actively to protect your right knee joint.",
+      "Sit tall; if you need more sensation, hinge gently forward from your hips with a flat back.",
+      "Hold for 5 deep breaths, uncross carefully, and switch to the left leg."
+    ],
+    "breathingCue": "Exhale slowly into any tight sensations in your outer hip.",
+    "studyBenefit": "Prevents sciatica, reduces lower back aches, and releases emotional stress stored in hips.",
+    "contraindications": "Do not push down directly on the knee; back off if knee twinges."
+  },
+  {
+    "id": "overhead-side-stretch",
+    "name": "Overhead Crescent Side Stretch",
+    "sanskrit": "Parsva Urdhva Hastasana (Chair)",
+    "targetArea": "Intercostals & Latissimus",
+    "durationSeconds": 60,
+    "difficulty": "Gentle",
+    "description": "Expands the ribcage and intercostal muscles, creating immediate physical space for deeper, fuller breathing when feeling anxious.",
+    "alignmentCues": [
+      "Sit upright with feet anchored and interlace your fingers overhead, palms pressed upwards.",
+      "Inhale to grow tall through your spine.",
+      "Exhale and gently lean your upper body to the right, keeping both sit bones rooted.",
+      "Gaze forward or slightly upward under your left arm.",
+      "Hold for 3 deep breaths, return to center on an inhale, and repeat on the left."
+    ],
+    "breathingCue": "Feel your ribs fan open like an accordion as you breathe into the elongated side.",
+    "studyBenefit": "Counters shallow chest breathing common during high-stress exam cramming.",
+    "contraindications": "Keep arms at shoulder height if overhead extension causes shoulder impingement."
+  },
+  {
+    "id": "seated-chest-opener",
+    "name": "Seated Chest Opener & Shoulder Rolls",
+    "sanskrit": "Urdhva Mukhasana (Chair)",
+    "targetArea": "Pectorals & Anterior Deltoids",
+    "durationSeconds": 60,
+    "difficulty": "Gentle",
+    "description": "Counters the rounded-shoulder 'student posture' by gently expanding the pectorals and stimulating open, confident posture.",
+    "alignmentCues": [
+      "Scoot toward the front of your chair with feet planted firmly.",
+      "Interlace your fingers behind your lower back, or hold the sides of the chair seat.",
+      "Roll your shoulders up, back, and down away from your ears.",
+      "Gently squeeze your shoulder blades together and lift your sternum upward.",
+      "Take 4 slow, expansive chest breaths, feeling renewed oxygenation."
+    ],
+    "breathingCue": "Fill your lungs completely from belly to collarbones on every inhale.",
+    "studyBenefit": "Immediately boosts alertness and combats midday study fatigue and slumping.",
+    "contraindications": "Avoid excessive neck hyperextension backwards."
+  },
+  {
+    "id": "chair-desk-rest",
+    "name": "Desk Rest / Chair Child's Pose",
+    "sanskrit": "Balasana (Desk Variation)",
+    "targetArea": "Mind, Eyes & Upper Spine",
+    "durationSeconds": 120,
+    "difficulty": "Restorative",
+    "description": "A deeply restorative mini-retreat at your study desk that darkens the eyes, quiets cognitive chatter, and resets your nervous system.",
+    "alignmentCues": [
+      "Clear a small space on your desk and fold your forearms together on the desk surface.",
+      "Slide your chair back slightly so your torso can fold forward comfortably.",
+      "Rest your forehead softly on your stacked forearms or hands.",
+      "Close your eyes and release all tension in your jaw, tongue, and eyelids.",
+      "Surrender to slow, natural nasal breathing for 1 to 2 minutes."
+    ],
+    "breathingCue": "Let every exhale wash away exam worry and mental chatter.",
+    "studyBenefit": "Gives eyes complete relief from blue light screen glare and resets focus.",
+    "contraindications": "Ensure your desk is stable and comfortable to lean upon."
+  }
+]

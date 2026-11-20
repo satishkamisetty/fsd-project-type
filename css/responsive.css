@@ -1,0 +1,193 @@
+/* ==========================================================================
+   ZenZone – Responsive Design Stylesheet (Mobile & Tablet)
+   ========================================================================== */
+
+/* Tablet & Smaller Desktops (Max 1024px) */
+@media (max-width: 1024px) {
+  h1 { font-size: 2.3rem; }
+  h2 { font-size: 1.85rem; }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .floating-badge {
+    position: static;
+    margin: 0.5rem;
+    display: inline-flex;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .banner-text .steps-mini {
+    justify-content: center;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* Tablets and Mobile Phones (Max 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  /* Mobile Navigation Hamburger */
+  .mobile-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  .mobile-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 340px;
+    height: 100vh;
+    background: var(--color-white);
+    box-shadow: -4px 0 24px rgba(52, 61, 53, 0.15);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 6rem 2rem 2rem;
+    gap: 2rem;
+    transition: right var(--transition-normal);
+    z-index: 999;
+  }
+
+  .main-nav.nav-open {
+    right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 1.15rem;
+  }
+
+  .nav-cta {
+    width: 100%;
+  }
+
+  .nav-cta .btn {
+    width: 100%;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .timer-widget {
+    padding: 2rem 1.25rem;
+  }
+
+  .timer-digits {
+    font-size: 2.6rem;
+  }
+
+  .timer-ring-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .circle-wrapper {
+    width: 230px;
+    height: 230px;
+  }
+
+  .breathing-animated-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .breath-timer-count {
+    font-size: 2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .session-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Small mobile screens (Max 480px) */
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}

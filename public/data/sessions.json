@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Morning Meditation",
+    "duration": 5,
+    "category": "Meditation",
+    "completed": true,
+    "date": "17 Nov"
+  },
+  {
+    "id": 2,
+    "title": "Stress Relief",
+    "duration": 10,
+    "category": "Meditation",
+    "completed": true,
+    "date": "18 Nov"
+  },
+  {
+    "id": 3,
+    "title": "Focus Meditation",
+    "duration": 15,
+    "category": "Meditation",
+    "completed": true,
+    "date": "19 Nov"
+  }
+]

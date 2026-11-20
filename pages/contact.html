@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Support – ZenZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    .faq-item {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: all var(--transition-fast);
+    }
+    .faq-question {
+      padding: 1.25rem 1.5rem;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-charcoal);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 1.5rem 1.25rem;
+      color: var(--color-charcoal-light);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+    .faq-icon {
+      transition: transform var(--transition-fast);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6a6 6 0 0 0-6 6c0 3.3 2.7 6 6 6s6-2.7 6-6"/>
+        </svg>
+        <span>ZenZone</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="yoga.html">Yoga Poses</a></li>
+          <li><a href="meditation.html">Meditation</a></li>
+          <li><a href="breathing.html">Breathing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="meditation.html" class="btn btn-primary">Start Practicing</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="section bg-light" style="padding: 4rem 0 3rem;">
+    <div class="container text-center">
+      <span class="section-tag">Reach Out</span>
+      <h1 class="section-title">Get in Touch</h1>
+      <p class="section-subtitle">
+        Have questions about yoga poses, guided meditation sequences, or collaboration? We'd love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 3.5rem; align-items: flex-start;">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3 style="margin-bottom: 0.5rem;">Send Us a Message</h3>
+          <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Fill out this form and we'll reply within 24 hours.</p>
+
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" class="form-control" placeholder="e.g. Maya Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress">Email Address *</label>
+              <input type="email" id="emailAddress" class="form-control" placeholder="maya@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subjectCategory">Inquiry Type</label>
+              <select id="subjectCategory" class="form-control">
+                <option value="general">General Inquiry</option>
+                <option value="yoga">Yoga Pose Guidance</option>
+                <option value="meditation">Meditation & Timer Question</option>
+                <option value="feedback">Website Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="messageBody">Your Message *</label>
+              <textarea id="messageBody" class="form-control" placeholder="Share your mindful journey or ask a question..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message
+            </button>
+          </form>
+
+          <div id="formSuccessToast" style="display: none; background: #e1efe2; color: #2e693b; padding: 1rem; border-radius: var(--radius-sm); margin-top: 1rem; font-size: 0.95rem; border: 1px solid #b5d8b8;">
+            ✓ Thank you! Your message has been received. Have a peaceful day!
+          </div>
+        </div>
+
+        <!-- Contact Details & Info -->
+        <div>
+          <div style="background: var(--color-white); border-radius: var(--radius-md); border: 1px solid var(--color-border); padding: 2.2rem; box-shadow: var(--shadow-sm); margin-bottom: 2rem;">
+            <h3 style="margin-bottom: 1.25rem;">Contact Information</h3>
+            <div style="display: flex; gap: 1rem; margin-bottom: 1.25rem;">
+              <div style="font-size: 1.5rem;">📧</div>
+              <div>
+                <strong style="color: var(--color-forest);">Email Support</strong>
+                <p style="margin: 0; font-size: 0.95rem;">support@zenzone-wellness.org</p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; margin-bottom: 1.25rem;">
+              <div style="font-size: 1.5rem;">📍</div>
+              <div>
+                <strong style="color: var(--color-forest);">Location</strong>
+                <p style="margin: 0; font-size: 0.95rem;">ZenZone Mindful Lab, Peace Avenue</p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+              <div style="font-size: 1.5rem;">🕒</div>
+              <div>
+                <strong style="color: var(--color-forest);">Operating Hours</strong>
+                <p style="margin: 0; font-size: 0.95rem;">Monday – Friday: 06:00 AM – 08:00 PM (IST)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <h3 style="margin-bottom: 1rem;">Frequently Asked Questions</h3>
+          <div class="faq-accordion">
+            <div class="faq-item open">
+              <button class="faq-question">
+                Is ZenZone suitable for complete beginners?
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                Yes! Every pose includes difficulty tags (Beginner, Intermediate), duration recommendations, and gentle step-by-step alignment cues.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How often should I practice Box Breathing?
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                Practicing 4 to 8 cycles (2 to 3 minutes) once or twice daily, or whenever you encounter acute stress, helps regulate your nervous system effectively.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Does the meditation timer work offline?
+                <span class="faq-icon">▼</span>
+              </button>
+              <div class="faq-answer">
+                Yes! Both the timer and session log use standard browser Web APIs and LocalStorage, meaning full functionality even without internet access.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6a6 6 0 0 0-6 6c0 3.3 2.7 6 6 6s6-2.7 6-6"/>
+          </svg>
+          <span>ZenZone</span>
+        </div>
+        <p>Your sanctuary for mindful living, authentic yoga asana guidance, and soothing breath exercises.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="yoga.html">Yoga Poses</a></li>
+          <li><a href="meditation.html">Meditation</a></li>
+          <li><a href="breathing.html">Breathing</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="about.html">About Developer</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container flex-between">
+        <p>&copy; 2026 ZenZone. Module 1–2 Static Contact Page.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mainNav = document.getElementById('mainNav');
+    if (mobileBtn && mainNav) {
+      mobileBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-open');
+        mobileBtn.classList.toggle('active');
+      });
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        item.classList.toggle('open');
+      });
+    });
+
+    // Contact Form Handler
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const toast = document.getElementById('formSuccessToast');
+      const form = document.getElementById('contactForm');
+      if (toast && form) {
+        toast.style.display = 'block';
+        form.reset();
+        setTimeout(() => {
+          toast.style.display = 'none';
+        }, 5000);
+      }
+    }
+  </script>
+</body>
+</html>
